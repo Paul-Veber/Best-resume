@@ -4,7 +4,7 @@
   <img src="src/assets/logo.png" alt="Markdownify" width="200"></a>
   <br>
   best-resume-ever
-  <p> My personnal fork visit https://github.com/salomonelli/best-resume-ever for the original project <p>
+  <p size="20"> My personnal fork visit [best-resume-ever](https://github.com/salomonelli/best-resume-ever) for the original project <p>
   <br>
 </h1>
 
