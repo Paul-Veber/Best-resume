@@ -3,7 +3,8 @@
   <a href="https://github.com/salomonelli/best-resume-ever">
   <img src="src/assets/logo.png" alt="Markdownify" width="200"></a>
   <br>
-  best-resume-ever
+  Best-resume-ever
+  <br>
   <p size="20"> My personnal fork visit <a href="https://github.com/salomonelli/best-resume-ever">best-resume-ever</a> for the original project <p>
   <br>
 </h1>

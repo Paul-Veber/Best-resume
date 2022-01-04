@@ -130,7 +130,7 @@
           <p class="info" v-html="project.description"></p>
         </div>
       </div>
-      <div class="section-headline">{{ lang.contributions }}</div>
+      <div class="section-headline contrib">{{ lang.contributions }}</div>
       <div class="block" v-for=" contributions in person.contributions">
         <div class="block-helper"></div>
         <div class="headline"><a :href="contributions.url">{{contributions.name}}</a></h3>
@@ -225,6 +225,9 @@ a {
     margin-bottom: 15px;
     color: #3f3d3c;
 }
+.contrib {
+    padding-top: 85px;
+  }
 .c {
     clear: both;
 }
@@ -284,8 +287,9 @@ h4 {
 .farRightCol {
     width: 30%;
     height: 100%;
-    float: right;
     display: flex;
+    padding-top: 15px;
+    padding-left: 22px;
     margin-top: 15px;
     flex-direction: column;
     .block {
@@ -372,7 +376,7 @@ h4 {
     height: 100%;
     float: left;
     display: flex;
-    padding-left: 10px;
+    padding-left: 5px;
     flex-direction: column;
     .block {
         width: 90%;
@@ -447,7 +451,7 @@ h4 {
     }
 }
 .leftCol {
-    width: 35%;
+    width: 34%;
     height: 100%;
     float: left;
     padding: 0;
