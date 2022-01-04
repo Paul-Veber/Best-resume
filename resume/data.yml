@@ -2,74 +2,88 @@
 # Any fields left unchanged, please delete so your resume is fully yours!
 
 name:
-  first: John
+  first: Paul
   middle:
-  last: Doe
-about: Hi, my name is John Doe. I'm just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+  last: Veber
+about:
+
+position: Développeur Web Junior
 
 birth:
-  year: 1990
-  location: New York
+  year: 1994
+  location: Vannes
 
 # you may add more experiences by duplicating the template
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
+- company: Super U
+  position: employé saisonier
+  timeperiod: 2014-2016 (pendant l'été)
+  description: travail saisonier. Mise en rayon et caisse.
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
+- company: Pole emploi
+  position: Service civique
+  timeperiod: janvier-juillet 2020
+  description: aide aux outils numériques de Pôle emploi et faciliter l’inclusion numérique
 
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company:  Gilles Granger
+  position: Stagiaire
+  timeperiod: Aout-octobre 2021
+  description: Refonte du site pour la gestion des tournois du club d'escrime des Hauts de France (voir contributions)
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
+- degree: Licence de Géographie et aménagement du territoire
+  timeperiod: 2013-2017
+  description: Lyon 2 lumiére
 
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: Diplome de comptabilité et gestion
+  timeperiod: 2018-2019
+  description: Lorient
+
+- degree: Formation Devellopeur Web et Web mobile
+  timeperiod: 2021
+  description: formation en telepresentiel avec O'clock
+  website: https://oclock.io/formations/developpeur-web
 
 # skill level goes from 0 to 100
 skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
-- name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
+- name: Tailwind
   level: 80
-- name: ES.Next
+- name: Bootstrap
+  level: 80
+- name: Symfony
+  level: 80
+- name: PHP
+  level: 80
+- name: CSS3
   level: 70
-- name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: JavaScript
+  level: 70
+- name: Laravel
+  level: 70
+- name: VuesJs
+  level: 70
+- name: Bash
+  level: 70
+- name: Rust
+  level: 40
+- name: TypeScript
+  level: 30
+
+knowledge: Bon niveau en anglais. 
 
 projects:
-- name: best-resume-ever
-  platform: Vue
-  timeperiod: February 2016
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: O'Roliste
+  platform: PHP, symfony, javascript, Bootstrap
+  timeperiod: Juin 2021
+  description: site permetant de proposer et de chercher des parties de jeux de rôle (voir la <a href="https://youtu.be/TIXGltXg4yY?t=559">demo<a> 10 min)
+  url: https://github.com/Paul-Veber/O-roliste
+
+- name: Roll20_template
+  platform: rust, Handlebar, scss, tailwind
+  timeperiod: decembre 2021 (en cour)
+  description: permet de facilement créer des sites statiques à terme devra permettre de facilement créer des fiches personnalisé pour <a href="https://roll20.net/">roll20<a> 
+  url: https://github.com/Paul-Veber/roll20_template/tree/DDADX
 
 # optional, not all resume templates have hobbies included
 hobbies:
@@ -82,17 +96,24 @@ hobbies:
   url: https://example.com
 
 contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
+- name: Best-resume-ever
+  platform: Vuejs
+  description: Fork du projet pour réalier le CV que vous lisez
   url: https://github.com/salomonelli/best-resume-ever
 
+- name: Ligueelo
+  platform: laravel, vuejs, tailwind
+  description: site d'organisation des tournois pour le club d'escrime des Hauts de France
+  url: http://ligueelo.fr/
+
+
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: paul.veber@protonmail.com
+  phone: 06 61 22 5152
+  street: 32 rue amiral coudé
+  city: Auray
+  #website: johndoe.com
+  github: Paul-Veber
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
-lang: en
+lang: fr
 `

@@ -64,7 +64,8 @@
       </div>
     </a>
 
-    <a :href="person.contact.website" target="_blank">
+
+    <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
       <div class="item">
         <div class="icon">
           <i class="material-icons">language</i>
@@ -92,43 +93,55 @@
     </div>
   </div>
 
-  <div class="rightCol">
     <div class="title">
       <h2>{{person.name.first}}  {{person.name.last}}</h2>
-      <div>{{person.position}}</div>
+      <div class="position">{{person.position}}</div>
     </div>
 
-    <div class="section-headline">{{ lang.experience }}</div>
-    <div class="block" v-for="experience in person.experience">
-      <div class="block-helper"></div>
-      <div class="headline">{{experience.position}} - {{experience.company}}</h3>
-        <div class="subheadline">{{experience.timeperiod}}</div>
+  <div class="subcollumn">
+    <div class="rightCol">
+      <div class="section-headline">{{ lang.experience }}</div>
+      <div class="block" v-for="experience in person.experience">
+        <div class="block-helper"></div>
+        <div class="headline">{{experience.position}} - {{experience.company}}</h3>
+          <div class="subheadline">{{experience.timeperiod}}</div>
+          <p class="info">
+            {{experience.description}}
+          </p>
+        </div>
+      </div>
+
+      <div class="section-headline">{{ lang.education }}</div>
+      <div class="block" v-for="education in person.education">
+        <div class="block-helper"></div>
+        <div class="headline">{{education.degree}}</div>
         <p class="info">
-          {{experience.description}}
+          {{education.timeperiod}}, {{education.description}}
         </p>
       </div>
     </div>
-
-    <div class="section-headline">{{ lang.education }}</div>
-    <div class="block" v-for="education in person.education">
-      <div class="block-helper"></div>
-      <div class="headline">{{education.degree}}</div>
-      <p class="info">
-        {{education.timeperiod}}, {{education.description}}
-      </p>
-    </div>
-  </div>
-  <div class="farRightCol">
-    <div class="section-headline">{{ lang.projects }}</div>
-    <div class="block" v-for="project in person.projects">
-      <div class="block-helper"></div>
-      <div class="headline">{{project.name}}</h3>
-        <div class="subheadline">{{project.timeperiod}}</div>
-        <p class="info">{{project.description}}</p>
+    <div class="farRightCol">
+      <div class="section-headline">{{ lang.projects }}</div>
+      <div class="block" v-for="project in person.projects">
+        <div class="block-helper"></div>
+        <div class="headline"><a :href="project.url">{{project.name}}</a></h3>
+          <div class="subheadline">{{project.timeperiod}}</div>
+          <p class="lang">{{project.platform}}</p>
+          <p class="info" v-html="project.description"></p>
+        </div>
       </div>
+      <div class="section-headline">{{ lang.contributions }}</div>
+      <div class="block" v-for=" contributions in person.contributions">
+        <div class="block-helper"></div>
+        <div class="headline"><a :href="contributions.url">{{contributions.name}}</a></h3>
+          <div class="subheadline">{{contributions.timeperiod}}</div>
+          <p class="lang">{{contributions.platform}}</p>
+          <p class="info">{{contributions.description}}</p>
+        </div>
+      </div>
+
     </div>
   </div>
-
 
   <div style="clear:both;"></div>
 </div>
@@ -161,7 +174,7 @@ a {
 .title {
     right: 25px;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 0px;
     bottom: 25px;
     h2 {
         text-transform: uppercase;
@@ -174,13 +187,14 @@ a {
         color: white;
         color: rgba(0,0,0,0.7);
         padding-top: 0;
-        margin-top: 0;
+        padding-left: 17rem;
+        margin: 0;
         letter-spacing: 10px;
         font-weight: 400;
     }
-    div {
-        margin: 0;
-        padding: 0;
+    .position {
+        margin-top: 0px !important;
+        padding-left: 17rem;
         line-height: 15pt;
         font-weight: 300;
         font-weight: 500;
@@ -207,8 +221,8 @@ a {
     font-size: 10pt;
     opacity: 0.8;
     margin-left: 20px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     color: #3f3d3c;
 }
 .c {
@@ -272,7 +286,7 @@ h4 {
     height: 100%;
     float: right;
     display: flex;
-    margin-top: 120px;
+    margin-top: 15px;
     flex-direction: column;
     .block {
         width: 90%;
@@ -298,8 +312,15 @@ h4 {
             font-size: 14px;
             color: rgba(0,0,0,0.870588);
             margin-bottom: 0;
-            padding-top: 20px;
+            padding-top: 10px;
         }
+        .lang {
+            font-size: 14px;
+            color: rgba(0,0,0,0.870588);
+            margin-bottom: 0;
+            font-style: italic;
+            padding-top: 20px;
+          }
         .icon {
             width: 16%;
             float: left;
