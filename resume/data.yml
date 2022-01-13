@@ -24,28 +24,26 @@ experience:
 - company: Pole emploi
   position: Service civique
   timeperiod: janvier-juillet 2020
-  description: aide aux outils numériques de Pôle emploi et faciliter l’inclusion numérique
+  description: Aide aux outils numériques de Pôle emploi et faciliter l’inclusion numérique
 
 - company: Super U
-  position: employé saisonier
+  position: Employé saisonnier
   timeperiod: 2014-2016 (pendant l'été)
-  description: travail saisonier. Mise en rayon et caisse.
+  description: Travail saisonnier. Mise en rayon et caisse.
 
 education:
 - degree: Formation Devellopeur Web et Web mobile
   timeperiod: 2021
-  description: formation en telepresentiel avec O'clock
+  description: Formation en téléprésentiel avec O'clock
   website: https://oclock.io/formations/developpeur-web
 
-- degree: Diplome de comptabilité et gestion
+- degree: "Préparation DCG: Diplôme de comptabilité et de gestion"
   timeperiod: 2018-2019
-  description: Lorient
+  description: Lorient - Un diplôme d’État de niveau Licence
 
 - degree: Licence de Géographie et aménagement du territoire
   timeperiod: 2013-2017
   description: Lyon 2 lumiére
-
-
 
 # skill level goes from 0 to 100
 skills:
@@ -80,19 +78,19 @@ projects:
 - name: O'Roliste
   platform: PHP, symfony, SQL, javascript, Bootstrap
   timeperiod: Juin 2021
-  description: Site permetant de proposer et de chercher des parties de jeux de rôle (voir la <a href="https://youtu.be/TIXGltXg4yY?t=559">demo<a> 10 min)
+  description: Site proposant la création et la recherche de parties de jeux de rôles (voir la <a href="https://youtu.be/TIXGltXg4yY?t=559">demo<a> 10 min)
   url: https://github.com/Paul-Veber/O-roliste
 
 - name: Roll20_template
   platform: rust, Handlebar, scss, tailwind
   timeperiod: decembre 2021 (en cour)
-  description: Permet de facilement créer des sites statiques à terme facilitera la création de fiches personnalisées pour <a href="https://roll20.net/">roll20<a> 
+  description: Mise en place rapide et facile de sites statiques pour permettre la création de fiches personnalisées pour roll20 <a href="https://roll20.net/">roll20<a> 
   url: https://github.com/Paul-Veber/roll20_template/tree/DDADX
 
 - name: Django-learning
   platform: Python, Django, CSS
-  timeperiod: janvier 2022 (en cour)
-  description: Entrainement au framework Django 
+  timeperiod: janvier 2022 - présent
+  description: Finalisation de formation au framework Django
   url: https://github.com/Paul-Veber/Django-learning/tree/main
 
 # optional, not all resume templates have hobbies included
@@ -108,12 +106,12 @@ hobbies:
 contributions:
 - name: Best-resume-ever
   platform: Vuejs
-  description: Fork du projet pour réalier le CV que vous lisez
+  description: Fork du projet pour réaliser le présent CV
   url: https://github.com/salomonelli/best-resume-ever
 
 - name: Ligueelo
   platform: laravel, vuejs, tailwind
-  description: site d'organisation des tournois pour le club d'escrime des Hauts de France
+  description: Site d'organisation de tournois pour le club d'escrime des Hauts de France
   url: http://ligueelo.fr/
 
 
