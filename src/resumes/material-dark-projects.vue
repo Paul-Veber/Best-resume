@@ -1,3 +1,4 @@
+
 <template>
 <div class="resume">
   <div class="leftCol m_box">
@@ -70,8 +71,8 @@
         <div class="icon">
           <i class="material-icons">language</i>
         </div>
-        <div class="text">
-          <span>{{person.contact.website}}</span>
+        <div class="link">
+          <a :href="person.contact.website">Linkedin</a>
         </div>
       </div>
     </a>
@@ -100,44 +101,43 @@
 
   <div class="subcollumn">
     <div class="rightCol">
-      <div class="section-headline">{{ lang.experience }}</div>
-      <div class="block" v-for="experience in person.experience">
-        <div class="block-helper"></div>
-        <div class="headline">{{experience.position}} - {{experience.company}}</h3>
-          <div class="subheadline">{{experience.timeperiod}}</div>
-          <p class="info">
-            {{experience.description}}
-          </p>
-        </div>
-      </div>
-
-      <div class="section-headline">{{ lang.education }}</div>
+     <div class="section-headline contrib">{{ lang.education }}</div>
       <div class="block" v-for="education in person.education">
         <div class="block-helper"></div>
-        <div class="headline">{{education.degree}}</div>
+        <div class="headline sectionTitle">{{education.degree}}</div>
         <p class="info">
           {{education.timeperiod}}, {{education.description}}
         </p>
       </div>
+
+      <div class="section-headline">{{ lang.experience }}</div>
+      <div class="block" v-for="experience in person.experience">
+        <div class="block-helper"></div>
+        <div class="headline sectionTitle">{{experience.position}} - {{experience.company}}</div>
+          <div class="subheadline">{{experience.timeperiod}}</div>
+          <p class="info">
+            {{experience.description}}
+          </p>
+      </div>
+
+     
     </div>
     <div class="farRightCol">
       <div class="section-headline">{{ lang.projects }}</div>
       <div class="block" v-for="project in person.projects">
         <div class="block-helper"></div>
-        <div class="headline"><a :href="project.url">{{project.name}}</a></h3>
+        <div class="headline"><a :href="project.url">{{project.name}}</a></div>
           <div class="subheadline">{{project.timeperiod}}</div>
           <p class="lang">{{project.platform}}</p>
           <p class="info" v-html="project.description"></p>
-        </div>
       </div>
-      <div class="section-headline contrib">{{ lang.contributions }}</div>
+      <div class="section-headline">{{ lang.contributions }}</div>
       <div class="block" v-for=" contributions in person.contributions">
         <div class="block-helper"></div>
-        <div class="headline"><a :href="contributions.url">{{contributions.name}}</a></h3>
+        <div class="headline"><a :href="contributions.url">{{contributions.name}}</a></div>
           <div class="subheadline">{{contributions.timeperiod}}</div>
           <p class="lang">{{contributions.platform}}</p>
           <p class="info">{{contributions.description}}</p>
-        </div>
       </div>
 
     </div>
@@ -226,7 +226,7 @@ a {
     color: #3f3d3c;
 }
 .contrib {
-    padding-top: 85px;
+    padding-top: 15px;
   }
 .c {
     clear: both;
@@ -289,14 +289,14 @@ h4 {
     height: 100%;
     display: flex;
     padding-top: 15px;
-    padding-left: 22px;
+    padding-left: 12px;
     margin-top: 15px;
     flex-direction: column;
     .block {
         width: 90%;
         position: relative;
         background-color: #ffffff;
-        padding: 20px;
+        padding: 10px;
         margin-top: 5px;
         margin-bottom: 5px;
         display: inline-block;
@@ -376,13 +376,13 @@ h4 {
     height: 100%;
     float: left;
     display: flex;
-    padding-left: 5px;
+    padding-left: 20px;
     flex-direction: column;
     .block {
         width: 90%;
         position: relative;
         background-color: #ffffff;
-        padding: 20px;
+        padding: 10px;
         margin-top: 5px;
         margin-bottom: 5px;
         display: inline-block;
@@ -391,6 +391,7 @@ h4 {
             display: block;
             font-size: 15px;
             color: rgba(0,0,0,0.870588);
+            text-decoration: underline;
         }
         .subheadline {
             color: rgba(0,0,0,0.541176);
@@ -567,4 +568,7 @@ h4 {
     width: 25px;
     padding-left: 17px;
 }
+.link {
+    text-decoration: underline;
+  }
 </style>

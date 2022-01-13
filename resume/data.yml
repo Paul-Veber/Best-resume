@@ -16,45 +16,45 @@ birth:
 # you may add more experiences by duplicating the template
 
 experience:
-- company: Super U
-  position: employé saisonier
-  timeperiod: 2014-2016 (pendant l'été)
-  description: travail saisonier. Mise en rayon et caisse.
+- company:  Gilles Granger
+  position: Stagiaire
+  timeperiod: Aout-octobre 2021
+  description: Refonte du site pour la gestion des tournois du club d'escrime des Hauts de France (voir contributions)
 
 - company: Pole emploi
   position: Service civique
   timeperiod: janvier-juillet 2020
   description: aide aux outils numériques de Pôle emploi et faciliter l’inclusion numérique
 
-- company:  Gilles Granger
-  position: Stagiaire
-  timeperiod: Aout-octobre 2021
-  description: Refonte du site pour la gestion des tournois du club d'escrime des Hauts de France (voir contributions)
+- company: Super U
+  position: employé saisonier
+  timeperiod: 2014-2016 (pendant l'été)
+  description: travail saisonier. Mise en rayon et caisse.
 
 education:
-- degree: Licence de Géographie et aménagement du territoire
-  timeperiod: 2013-2017
-  description: Lyon 2 lumiére
-
-- degree: Diplome de comptabilité et gestion
-  timeperiod: 2018-2019
-  description: Lorient
-
 - degree: Formation Devellopeur Web et Web mobile
   timeperiod: 2021
   description: formation en telepresentiel avec O'clock
   website: https://oclock.io/formations/developpeur-web
 
+- degree: Diplome de comptabilité et gestion
+  timeperiod: 2018-2019
+  description: Lorient
+
+- degree: Licence de Géographie et aménagement du territoire
+  timeperiod: 2013-2017
+  description: Lyon 2 lumiére
+
+
+
 # skill level goes from 0 to 100
 skills:
 - name: Tailwind
-  level: 80
-- name: Bootstrap
-  level: 80
+  level: 70
+    #- name: Bootstrap
+    #level: 70
 - name: Symfony
-  level: 80
-- name: PHP
-  level: 80
+  level: 70
 - name: CSS3
   level: 70
 - name: JavaScript
@@ -62,9 +62,13 @@ skills:
 - name: Laravel
   level: 70
 - name: VuesJs
-  level: 70
+  level: 60
 - name: Bash
-  level: 70
+  level: 60
+- name: python
+  level: 60
+- name: Django
+  level: 60
 - name: Rust
   level: 40
 - name: TypeScript
@@ -74,16 +78,22 @@ knowledge: Bon niveau en anglais.
 
 projects:
 - name: O'Roliste
-  platform: PHP, symfony, javascript, Bootstrap
+  platform: PHP, symfony, SQL, javascript, Bootstrap
   timeperiod: Juin 2021
-  description: site permetant de proposer et de chercher des parties de jeux de rôle (voir la <a href="https://youtu.be/TIXGltXg4yY?t=559">demo<a> 10 min)
+  description: Site permetant de proposer et de chercher des parties de jeux de rôle (voir la <a href="https://youtu.be/TIXGltXg4yY?t=559">demo<a> 10 min)
   url: https://github.com/Paul-Veber/O-roliste
 
 - name: Roll20_template
   platform: rust, Handlebar, scss, tailwind
   timeperiod: decembre 2021 (en cour)
-  description: permet de facilement créer des sites statiques à terme devra permettre de facilement créer des fiches personnalisé pour <a href="https://roll20.net/">roll20<a> 
+  description: Permet de facilement créer des sites statiques à terme facilitera la création de fiches personnalisées pour <a href="https://roll20.net/">roll20<a> 
   url: https://github.com/Paul-Veber/roll20_template/tree/DDADX
+
+- name: Django-learning
+  platform: Python, Django, CSS
+  timeperiod: janvier 2022 (en cour)
+  description: Entrainement au framework Django 
+  url: https://github.com/Paul-Veber/Django-learning/tree/main
 
 # optional, not all resume templates have hobbies included
 hobbies:
@@ -112,7 +122,7 @@ contact:
   phone: 06 61 22 5152
   street: 32 rue amiral coudé
   city: Auray
-  #website: johndoe.com
+  website: https://www.linkedin.com/in/paul-veber-1847b322a/
   github: Paul-Veber
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
 lang: fr
