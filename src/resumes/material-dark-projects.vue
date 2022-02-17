@@ -475,7 +475,7 @@ h4 {
         background-position: center;
         position: relative;
         width: 100%;
-        height: 277px;
+        height: 212px;
     }
     .item {
         width: 100%;

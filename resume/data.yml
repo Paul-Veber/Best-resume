@@ -32,9 +32,9 @@ experience:
   description: Travail saisonnier. Mise en rayon et caisse.
 
 education:
-- degree: Formation Devellopeur Web et Web mobile
+- degree: Formation Développeur Web et Web mobile lien
   timeperiod: 2021
-  description: Formation en téléprésentiel avec O'clock
+  description: Formation en distanciel avec O'clock
   website: https://oclock.io/formations/developpeur-web
 
 - degree: "Préparation DCG: Diplôme de comptabilité et de gestion"
@@ -59,6 +59,10 @@ skills:
   level: 70
 - name: Laravel
   level: 70
+- name: TypeScript
+  level: 60
+- name: NodeJS
+  level: 60
 - name: VuesJs
   level: 60
 - name: Bash
@@ -66,13 +70,11 @@ skills:
 - name: python
   level: 60
 - name: Django
-  level: 60
+  level: 50
 - name: Rust
   level: 40
-- name: TypeScript
-  level: 30
 
-knowledge: Bon niveau en anglais. 
+knowledge: Bon niveau en anglais.
 
 projects:
 - name: O'Roliste
@@ -84,14 +86,14 @@ projects:
 - name: Roll20_template
   platform: rust, Handlebar, scss, tailwind
   timeperiod: decembre 2021 (en cour)
-  description: Mise en place rapide et facile de sites statiques pour permettre la création de fiches personnalisées pour roll20 <a href="https://roll20.net/">roll20<a> 
+  description: Mise en place rapide et facile de sites statiques pour permettre la création de fiches personnalisées pour roll20 <a href="https://roll20.net/">roll20<a>
   url: https://github.com/Paul-Veber/roll20_template/tree/DDADX
 
-- name: Django-learning
-  platform: Python, Django, CSS
+- name: NodeJS-ts_learning
+  platform: NodeJS, Express, Typescript, tailwind, ejs, prisma, io-ts, fp-ts
   timeperiod: janvier 2022 - présent
-  description: Finalisation de formation au framework Django
-  url: https://github.com/Paul-Veber/Django-learning/tree/main
+  description: Formation a NodeJs, Express et Typescript
+  url: https://github.com/Paul-Veber/node-ts-learnig
 
 # optional, not all resume templates have hobbies included
 hobbies:
