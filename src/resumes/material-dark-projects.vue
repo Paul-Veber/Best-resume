@@ -103,7 +103,8 @@
      <div class="section-headline contrib">{{ lang.education }}</div>
       <div class="block" v-for="education in person.education">
         <div class="block-helper"></div>
-        <div class="headline sectionTitle">{{education.degree}}</div>
+        <div v-if="education.website"><a :href="education.website">{{education.degree}}</a></div>
+        <div v-else class="headline sectionTitle">{{education.degree}}</div>
         <p class="info">
           {{education.timeperiod}}, {{education.description}}
         </p>
@@ -119,7 +120,7 @@
           </p>
       </div>
 
-     
+
     </div>
     <div class="farRightCol">
       <div class="section-headline">{{ lang.projects }}</div>
@@ -220,8 +221,8 @@ a {
     font-size: 10pt;
     opacity: 0.8;
     margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 3px;
+    margin-bottom: 5px;
     color: #3f3d3c;
 }
 .contrib {
@@ -472,7 +473,6 @@ h4 {
         background-color: white;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
         position: relative;
         width: 100%;
         height: 212px;
