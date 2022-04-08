@@ -51,38 +51,34 @@ education:
 
 # skill level goes from 0 to 100
 skills:
-- name: Tailwind
-  level: 70
-    #- name: Bootstrap
-    #level: 70
 - name: Symfony
-  level: 70
-- name: CSS3
-  level: 70
+  level: 100
 - name: JavaScript
-  level: 70
+  level: 100
+- name: Tailwind
+  level: 100
 - name: Laravel
-  level: 70
+  level: 100
 - name: TypeScript
-  level: 60
+  level: 90
 - name: NodeJS
-  level: 60
+  level: 90
 - name: VuesJs
-  level: 60
+  level: 80
 - name: Bash
-  level: 60
+  level: 70
 - name: python
-  level: 60
+  level: 70
 - name: Django
   level: 50
 - name: Rust
-  level: 40
+  level: 50
 
-knowledge: Bon niveau en anglais.
+knowledge: Bon niveau en anglais. Maitrise de Git. Méthode Agile. 
 
 projects:
 - name: O'Roliste
-  platform: PHP, symfony, SQL, javascript, Bootstrap
+  platform: PHP, symfony, MySql, javascript, Bootstrap, Apache
   timeperiod: Juin 2021
   description: Site proposant la création et la recherche de parties de jeux de rôles (voir la <a href="https://youtu.be/TIXGltXg4yY?t=559">demo<a> 10 min)
   url: https://github.com/Paul-Veber/O-roliste
